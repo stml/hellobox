@@ -614,7 +614,7 @@ label .text {
   text-align: center;
   padding: 20px 0;
   margin-top: 20px;
-  background: #666 url('../img/stripes.gif');
+  background: #e0e0e0;
 }
 
 .pagination .button {
