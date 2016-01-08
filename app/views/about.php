@@ -1,8 +1,9 @@
 <div id="content">
-  <h2 class="top"><?php echo _('About'); ?></h2>
-  <p><?php echo _('Occupy.here is a free, anonymous, and uncensored resource for you and your neighbors. You can post messages, share media files, and occupy the virtual space here as you wish.'); ?></p>
-  <h2><?php echo _('You are not on the internet'); ?></h2>
+  <h2>You are not on the internet</h2>
+  <p>You have connected to a wifi network that leads only to this website. If you're looking for the internet, disconnect from the hello.box network and look elsewhere.</p>
   <p><?php echo _('You are connected to a wifi router that’s been hacked to connect you to other people nearby. You are “offline” in relation to the rest of the Internet, but “online” in a way that connects you to others within range of the wifi signal.'); ?></p>
+  <h2 class="top"><?php echo _('About this box'); ?></h2>
+  <p><?php echo _('Occupy.here is a free, anonymous, and uncensored resource for you and your neighbors. You can post messages, share media files, and occupy the virtual space here as you wish.'); ?></p>
   <!--<h2><?php echo _('Occupy.here is a network'); ?></h2>
   <p><?php echo _('While this wifi router is not directly wired to any upstream network provider, it’s also not entirely isolated. There is another way that data can be transmitted to other occupy.here routers. The router’s local database has been quietly backed up onto your browser. Upon connecting to another Occupy.here router, the data you’ve carried with you will be synced and merged into that node’s database.'); ?></p>
   <p><?php echo _('Messages can propagate across the network, but your device is the conduit instead of an upstream ISP. The network of Occupy.here routers is very loosely connected, data moves slowly using a process that resembles insects polinating flowers.'); ?></p>-->

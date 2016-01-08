@@ -32,7 +32,6 @@
       </header>
       <?php } ?>
       <?php $this->give(); ?>
-      <?php $this->partial('languages'); ?>
     </div>
     <?php $this->give('footer'); ?>
   </body>

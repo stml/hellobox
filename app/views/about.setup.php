@@ -1,6 +1,6 @@
 <?php
 
-$page_title = 'occupy.here / ' . _('about');
+$page_title = 'hello.box / ' . _('about');
 $body_class = "$body_class about";
 
 ?>

@@ -21,7 +21,7 @@ $post_title = _('Post');
 
 $this->stylesheet('reset.css');
 $this->stylesheet('open_sans/open_sans.css');
-$this->stylesheet('occupy.here.css');
+$this->stylesheet('hello.box.css');
 
 $this->javascript('mootools-core-1.4.5-full-compat-yc.js');
 $this->javascript('mootools-more-1.4.0.1.js');
