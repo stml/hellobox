@@ -1025,12 +1025,11 @@ body.is-admin #post-button {
   
   #page {
     width: 520px;
-    padding: 0 30px 30px 30px;
   }
   
   header {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0 30px 30px 30px;
+    border-bottom: 1px solid #ccc;
   }
   
   .replies-arrow {
@@ -1038,7 +1037,7 @@ body.is-admin #post-button {
   }
   
   #content {
-    padding: 0;
+    padding: 0 30px 30px 30px;
   }
   
   
