@@ -1,0 +1,7 @@
+/config.php
+data/*
+!data/.empty
+public/uploads
+!public/uploads/.empty
+.DS_Store
+/logs
