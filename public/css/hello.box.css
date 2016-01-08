@@ -1016,7 +1016,7 @@ body.is-admin #post-button {
   only screen and (min-width: 590px) {
   
   body {
-    background-image: url('../img/cartographer.png');
+    background: #e0e0e0;
   }
   
   #menu .container {
