@@ -4,6 +4,10 @@
   
   <h2>Hello, box</h2>
   <p>This is <strong>hello.box</strong>, a small, portable, personal backchannel. It's a wifi router carried around by someone wherever they go. They can show you stuff, and you can leave them messages, and talk to other people who are also nearby. That's it.</p>
+  
+    <p><a href="forum" class="bigbutton">Chat or leave a message</a></p>
+  <p><a href="gallery" class="bigbutton">Visit the gallery</a></p>
+  
   <p>hello.box was developed by James Bridle. Find out more at <strong>http://booktwo.org</strong>. (No, that's not a link. You'll need the internet to do that!)</p>
   
   <h2>Thanks</h2>

@@ -1,5 +1,7 @@
 <div id="content">
-  <h2>hello.box</h2>
-  <p>homepage</p>
+
+  <p><a href="about" class="bigbutton">What is this?</a></p>
+  <p><a href="forum" class="bigbutton">Chat or leave a message</a></p>
+  <p><a href="gallery" class="bigbutton">Visit the gallery</a></p>
   
 </div>
