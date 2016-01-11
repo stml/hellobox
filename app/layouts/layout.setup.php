@@ -1,7 +1,7 @@
 <?php
 
 // Defaults
-$page_title = 'occupy.here';
+$page_title = 'hello.box';
 $body_class = '';
 
 if (!empty($grid->user)) {

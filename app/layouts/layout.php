@@ -23,11 +23,6 @@
           	<li><a href="forum">Forum</a>
           	<li><a href="gallery">Gallery</a></li>
           </ul>
-<!--
-          <?php if ($post_url != '') { ?>
-            <a href="<?php echo $post_url; ?>" id="post-button" class="post button" ontouchstart="" data-cancel="<?php echo _('Cancel'); ?>"><span class="icon"></span> <?php echo $post_title; ?></a>
-          <?php } ?>
--->
 
       </header>
       <?php } ?>

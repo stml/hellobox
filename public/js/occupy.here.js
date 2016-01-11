@@ -327,6 +327,7 @@ window.addEvent('domready', function() {
     });
     if ($('edit-options')) {
       $('edit-options').addEvent('click', function(e) {
+      	alert('clicked');
         e.stop();
         $('options-form').removeClass('hidden');
         $('edit-options').addClass('hidden');

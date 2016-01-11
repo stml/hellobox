@@ -1,6 +1,6 @@
 <?php
 
-function yield() {
+function give() {
   $handler = get_handler();
   echo $handler;
 }

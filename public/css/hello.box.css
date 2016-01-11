@@ -236,7 +236,7 @@ article .container {
 	position: relative;
 	cursor: pointer;
 	padding: 20px 20px 40px 20px;
-	background: #444 url('../img/who.png') no-repeat left bottom;
+	background: #cfc url('../img/who.png') no-repeat left bottom;
 	}
 
 article.topic .container,
@@ -274,7 +274,7 @@ article .author {
 }
 
 article .author a {
-  color: #fff;
+  color: #000;
   text-decoration: none;
 }
 
@@ -287,7 +287,7 @@ article .author a.delete {
 }
 
 article .author a:hover {
-  color: #fff;
+  color: #666;
   text-decoration: underline;
 }
 
@@ -337,6 +337,10 @@ article .when a:hover {
   border-radius: 10px;
 }
 
+.elapsedtime {
+	color: #888;
+	}
+
 #reply {
   padding-top: 30px;
 }
@@ -346,7 +350,7 @@ article .when a:hover {
 }
 
 #topic-form {
-  display: none;
+/*   display: none; */
 }
 
 #topic-form #post-form {
@@ -355,7 +359,6 @@ article .when a:hover {
 
 #post-form {
   padding-top: 0;
-  border-bottom: 3px solid #666;
 }
 
 #topic-form.visible {
@@ -372,10 +375,8 @@ article .when a:hover {
 }
 
 #post-form .buttons {
-  margin-top: 20px;
-  padding-bottom: 15px;
-  background: #666 url('../img/stripes.gif');
-}
+
+	}
 
 #post-form .buttons .button {
   color: #fff !important;
@@ -443,7 +444,7 @@ article .when a:hover {
 }
 
 #edit-options:hover {
-  color: #fff;
+  color: #666;
   text-decoration: underline;
 }
 
@@ -459,7 +460,7 @@ article .when a:hover {
 #edit-colors:hover,
 #edit-username:hover {
   text-decoration: underline;
-  color: #fff;
+  color: #888;
 }
 
 #username-form {

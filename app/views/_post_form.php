@@ -16,8 +16,8 @@ if (empty($form_class)) {
     <textarea name="content" rows="1" cols="40" class="content" placeholder="<?php echo $placeholder; ?>"><?php echo esc($content); ?></textarea>
   </div>
   <div class="author">
-    <a href="<?php echo "u/{$_SESSION['user_id']}"; ?>" class="id"><span class="color"></span><?php echo get_username($_SESSION['user_id']); ?></a>
-    <a href="#" id="edit-username"><?php echo _('edit name/colors'); ?></a>
+    <a href="<?php echo "u/{$_SESSION['user_id']}"; ?>" class="id"><?php echo get_username($_SESSION['user_id']); ?></a>
+    <a href="#" id="edit-username"><?php echo _('edit name'); ?></a>
   </div>
   <div id="username-form" class="hidden">
     <span class="color"></span>
@@ -77,7 +77,6 @@ if (empty($form_class)) {
   <?php } ?>
   <div class="buttons">
     <button id="submit-button" type="submit" name="task" value="post" class="post button" ontouchstart=""><span class="icon"></span> <?php echo _('Submit'); ?></button>
-    <button id="attach-button" class="attach button" ontouchstart=""><span class="icon"></span> <?php echo _('Attach'); ?></button>
     <div class="clear"></div>
   </div>
 </article>
