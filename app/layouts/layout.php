@@ -9,23 +9,16 @@
   </head>
   <body class="<?php echo $body_class; ?>" data-servertime="<?php echo time(); ?>" data-colors="<?php echo get_colors(); ?>">
     <div id="page">
-      <?php
-      
-      if ($params['view'] != 'intro') {
-        $this->partial('menu');
-        
-      ?>
       <header>
 
           <ul class="headmenu">
           	<li><strong>hello.box</strong></li>
+          	<li><a href="art">Art</a></li>
+          	<li><a href="forum">Chat</a>
           	<li><a href="about">About</a>
-          	<li><a href="forum">Forum</a>
-          	<li><a href="gallery">Gallery</a></li>
           </ul>
 
       </header>
-      <?php } ?>
       <?php $this->give(); ?>
     </div>
     <?php $this->give('footer'); ?>
