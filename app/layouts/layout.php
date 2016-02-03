@@ -14,7 +14,7 @@
           <ul class="headmenu">
           	<li><strong>hello.box</strong></li>
           	<li><a href="art">Art</a></li>
-          	<li><a href="forum">Chat</a>
+          	<li><a href="chat">Chat</a>
           	<li><a href="about">About</a>
           </ul>
 

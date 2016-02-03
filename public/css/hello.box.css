@@ -1,3 +1,5 @@
+
+
 html {
 	-webkit-text-size-adjust: none;
 	height: 100%;
@@ -6,7 +8,7 @@ html {
 body {
 	color: #000;
 	background: #000;
-	font: 14px open_sans_regular, verdana, sans-serif;
+	font: 14px robotoregular, helvetica, sans-serif;
 	text-align: center;
 	height: 100%;
 	}
@@ -118,48 +120,55 @@ body.home #page {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffdc88', endColorstr='#878787',GradientType=0 ); /* IE6-9 */
 	}
 body.home #homepage {	
-	height: 100%;
-	}
-body.home #homepage h1 {
-	color: #fff;
-	margin: 0;
-	font-size: 40px;
-	height: 25%;
-	vertical-align: middle;
-	}
-body.home #homepage p {
-	margin: 0;
-	min-height: 25%;
-	}
-	
-body.home #homepage a.bigbutton {
-	width: 100%;
-	height: 100%;
-	display: block;
 	text-align: center;
+	height: 100%;  
+	display: table;
+	width: 100%;
+	}
+body.home #homepage div {
+	font-family: roboto_slabbold, sans-serif;
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+	height: 25%;
+	overflow: hidden;
+	color: #fff;
+	font-size: 30px;
+	height: 20%;
+	display: table; 
+	}
+body.home #homepage div span {
+	display: table-cell;
+  	vertical-align: middle;
+  	width: 25%;
+	}
+body.home #homepage div.art {
+	font-family: roboto_slabthin, sans-serif;
+	font-size: 75px;
+	height: 25%;
+	}
+body.home #homepage div.chat {
+	font-family: roboto_slabthin, sans-serif;
+	font-size: 50px;
+	height: 25%;
+	}
+body.home #homepage div.about {
+	font-family: roboto_slabthin, sans-serif;
+	font-size:25px;
+	height: 25%;
+	}
+body.home #homepage a.bigbutton {
+	font-family: roboto_slabthin, sans-serif;
 	color: #fff;
 	text-decoration: none;
 	font-weight: bold;
 	text-transform: lowercase;
+	border: 2px dotted #fff;
+	padding: 22px 25px 25px;
+	border-radius: 500px;
 	}
-body.home #homepage a.art {
-	font-size: 60px;
-	}
-body.home #homepage a.art:hover {
-	color: #fff;
-	}
-body.home #homepage a.chat {
-	font-size: 50px;
-	}
-body.home #homepage a.chat:hover {
-	color: #fff;
-	}
-body.home #homepage a.about {
-	font-size:25px;
-	}
-body.home #homepage a.about:hover {
-	color: #fff;
-	}
+
+
 	
 .button,
 button,

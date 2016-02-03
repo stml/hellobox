@@ -20,7 +20,7 @@ $post_url = 'forum#post';
 $post_title = _('Post');
 
 $this->stylesheet('reset.css');
-$this->stylesheet('open_sans/open_sans.css');
+$this->stylesheet('roboto/roboto.css');
 $this->stylesheet('hello.box.css');
 
 $this->javascript('mootools-core-1.4.5-full-compat-yc.js');
