@@ -267,32 +267,6 @@ function hideTopicForm() {
 }
 
 window.addEvent('domready', function() {
-  $('menu').set('tween', {
-    duration: 333,
-    transition: Fx.Transitions.Quart.easeOut,
-  });
-  var menuSlide = new Fx.Slide($('menu'), {
-    duration: 750,
-    transition: Fx.Transitions.Quart.easeOut,
-    onStart: function() {
-      if (this.open) {
-        $('menu').fade('out');
-      }
-    },
-    onComplete: function() {
-      $('menu').fade('show');
-    }
-  }).hide();
-  var windowScroll = new Fx.Scroll(window, {
-    duration: 500,
-    transition: Fx.Transitions.Quart.easeOut,
-  });
-  $('menu').removeClass('hidden');
-  $('menu-button').addEvent('click', function(e) {
-    e.stop();
-    menuSlide.toggle();
-    windowScroll.start(0, 0);
-  });
   
   if ($('pdf')) {
     showPDF($$('.attachment')[0].get('href'));
