@@ -26,7 +26,7 @@ $this->stylesheet('hello.box.css');
 $this->javascript('mootools-core-1.4.5-full-compat-yc.js');
 $this->javascript('mootools-more-1.4.0.1.js');
 $this->javascript('manycopies.js');
-$this->javascript('occupy.here.js');
+$this->javascript('hello.box.js');
 
 $hidden_announcements = array();
 if (!empty($_COOKIE['hidden_announcements'])) {

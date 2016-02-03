@@ -3,15 +3,6 @@ function isTouchUI() {
          || !!('onmsgesturechange' in window);
 }
 
-function normalizeHue(hue) {
-  if (hue > 359) {
-    hue = hue % 360;
-  } else if (hue < 0) {
-    hue = hue += 360;
-  }
-  return hue;
-}
-
 function setupColorEditors(el) {
   el.getElements('.color-editor').each(function(editor) {
     var handle = editor.getElement('.handle');
@@ -267,6 +258,32 @@ function hideTopicForm() {
 }
 
 window.addEvent('domready', function() {
+  $('menu').set('tween', {
+    duration: 333,
+    transition: Fx.Transitions.Quart.easeOut,
+  });
+  var menuSlide = new Fx.Slide($('menu'), {
+    duration: 750,
+    transition: Fx.Transitions.Quart.easeOut,
+    onStart: function() {
+      if (this.open) {
+        $('menu').fade('out');
+      }
+    },
+    onComplete: function() {
+      $('menu').fade('show');
+    }
+  }).hide();
+  var windowScroll = new Fx.Scroll(window, {
+    duration: 500,
+    transition: Fx.Transitions.Quart.easeOut,
+  });
+  $('menu').removeClass('hidden');
+  $('menu-button').addEvent('click', function(e) {
+    e.stop();
+    menuSlide.toggle();
+    windowScroll.start(0, 0);
+  });
   
   if ($('pdf')) {
     showPDF($$('.attachment')[0].get('href'));
@@ -301,7 +318,6 @@ window.addEvent('domready', function() {
     });
     if ($('edit-options')) {
       $('edit-options').addEvent('click', function(e) {
-      	alert('clicked');
         e.stop();
         $('options-form').removeClass('hidden');
         $('edit-options').addClass('hidden');

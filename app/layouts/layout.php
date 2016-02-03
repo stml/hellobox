@@ -9,16 +9,9 @@
   </head>
   <body class="<?php echo $body_class; ?>" data-servertime="<?php echo time(); ?>" data-colors="<?php echo get_colors(); ?>">
     <div id="page">
-      <header>
-
-          <ul class="headmenu">
-          	<li><strong>hello.box</strong></li>
-          	<li><a href="art">Art</a></li>
-          	<li><a href="chat">Chat</a>
-          	<li><a href="about">About</a>
-          </ul>
-
-      </header>
+       <div id="header">
+      	<h1><a href="">hello.box</a></h1>
+      </div>
       <?php $this->give(); ?>
     </div>
     <?php $this->give('footer'); ?>
