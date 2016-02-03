@@ -176,7 +176,7 @@ input[type="submit"] {
 	border-radius: 10px;
 	border: 3px solid #666;
 	padding: 5px 10px;
-	font: 14px/24px open_sans_semibold, verdana, sans-serif;
+	font: 14px/24px robotomedium, verdana, sans-serif;
 	text-transform: uppercase;
 	}
 
@@ -254,7 +254,7 @@ article {
 	}
 
 textarea {
-	font: 14px/24px open_sans_regular, verdana, sans-serif;
+	font: 14px/24px robotoregular, verdana, sans-serif;
 	background: transparent;
 	color: #fff;
 	padding: 0;
@@ -266,7 +266,7 @@ textarea {
 
 input[type=text],
 input[type=password] {
-	font: 14px open_sans_regular, verdana, sans-serif;
+	font: 14px robotoregular, verdana, sans-serif;
 	color: #fff;
 	background: #444;
 	border: none;
@@ -527,7 +527,7 @@ article .when a:hover {
 .color-editor .label {
   display: inline-block;
   color: #fff;
-  font: 14px/24px open_sans_regular, verdana, sans-serif;
+  font: 14px/24px robotoregular, verdana, sans-serif;
   background: rgba(0, 0, 0, 0.3);
   padding: 2px 8px;
   margin: 11px auto 0 auto;
@@ -798,7 +798,7 @@ body.files #content ul .meta {
 #article h2,
 #article h1 {
   margin-bottom: 0;
-  font: 16px/24px open_sans_semibold,sans-serif;
+  font: 16px/24px robotomedium,sans-serif;
 }
 
 #article img {
@@ -838,7 +838,7 @@ body.files #content ul .meta {
 }
 
 #article .parasectionhed {
-  font: 14px/24px open_sans_semibold, sans-serif;
+  font: 14px/24px robotomedium, sans-serif;
   margin-top: 20px;
 }
 
@@ -891,7 +891,7 @@ ol.article-links {
 }
 
 #article .questionnaire-question {
-  font: 14px/24px open_sans_semibold, sans-serif;
+  font: 14px/24px robotomedium, sans-serif;
   margin-top: 40px;
 }
 
