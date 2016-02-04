@@ -1,6 +1,9 @@
-<article id="<?php echo "post_$post->id"; ?>" class="post <?php echo $class; ?>" data-colors="<?php echo get_colors($post->user_id); ?>">
+<article id="<?php echo "post_$post->id"; ?>" class="post <?php echo $class; ?>">
 
   <div class="container" ontouchstart="">
+  	<div class="author">
+  	<a href="u/<?php echo $post->user_id; ?>" class="id"><?php echo get_username($post->user_id); ?></a>
+  	</div>
     <div class="text-only hidden">
       <?php echo htmlentities($post->content, ENT_COMPAT, 'UTF-8'); ?>
     </div>
@@ -8,8 +11,8 @@
       <?php echo nl2br(htmlentities($post->content)); ?>
     </div>
   </div>
-  <div class="author">
-    <a href="u/<?php echo $post->user_id; ?>" class="id"><?php echo get_username($post->user_id); ?></a>
+  <div class="meta">
+    
         <?php
  	echo '<span class="elapsedtime">'.elapsed_time($post->created).'</span>';
     if ($this->view == 'user.php' && $post->parent_id != '0') {

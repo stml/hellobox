@@ -86,9 +86,9 @@ b, strong {
 #header {
 	text-align: center;
 	background: #ffdc88; /* Old browsers */
-	background: -moz-linear-gradient(top,  #ffdc88 0%, #ea5513 50%, #878787 100%);
-	background: -webkit-linear-gradient(top,  #ffdc88 0%,#ea5513 50%,#878787 100%); 
-	background: linear-gradient(to bottom,  #ffdc88 0%,#ea5513 50%,#878787 100%);
+	background: -moz-linear-gradient(top,  #ffdc88 0%, #ea5513 100%);
+	background: -webkit-linear-gradient(top,  #ffdc88 0%,#ea5513 100%); 
+	background: linear-gradient(to bottom,  #ffdc88 0%,#ea5513 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffdc88', endColorstr='#878787',GradientType=0 );
 	}
 #header h1 a {
@@ -99,6 +99,17 @@ b, strong {
 	background-image: url('../img/back-arrow.png');
     background-repeat: no-repeat;
     background-position: 5% center; 
+	}
+
+body.chat #header {
+	background: none;
+	}
+body.chat #page {
+	background: #ffdc88; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffdc88 0%, #ea5513 50%, #878787 100%);
+	background: -webkit-linear-gradient(top,  #ffdc88 0%,#ea5513 50%,#878787 100%);
+	background: linear-gradient(to bottom,  #ffdc88 0%,#ea5513 50%,#878787 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffdc88', endColorstr='#878787',GradientType=0 );	
 	}
 
 body.home #header {
@@ -159,7 +170,7 @@ body.home #homepage a.bigbutton {
 	text-transform: lowercase;
 	border: 2px dotted #fff;
 	padding: 22px 25px 25px;
-	border-radius: 500px;
+	border-radius: 10px;
 	}
 body.home #homepage a.bigbutton:hover {	
 	border: 2px solid #fff;
@@ -214,19 +225,9 @@ input[type="submit"]:hover {
 	background: #181818;
 	}
 
-header .menu {
-	float: left;
-	margin-right: 10px;
-	}
-
-.menu .icon {
-	background-image: url('../img/ikonic/PNG/Globe.png');
-	margin-bottom: -2px;
-	}
-
 .post .icon {
-  background-image: url('../img/ikonic/PNG/Comment-1.png');
-}
+	background-image: url('../img/ikonic/PNG/Comment-1.png');
+	}
 
 body.files .post .icon {
 	background-image: url('../img/ikonic/PNG/Save.png');
@@ -278,8 +279,11 @@ input[type=password] {
 article .container {
 	position: relative;
 	cursor: pointer;
-	padding: 20px 20px 40px 20px;
-	background: #cfc url('../img/who.png') no-repeat left bottom;
+	padding: 10px;
+	margin: 10px;
+	border: 1px dotted #fff;
+	border-radius: 10px;
+	background-image: url('../img/transparent-25-white.png');
 	}
 
 article.topic .container,
@@ -313,21 +317,26 @@ article.summary .content {
 }
 
 article .author {
-  margin: 5px 0;
-}
+	font-family: robotomedium, sans-serif;
+	margin: 5px 0;
+	}
 
 article .author a {
-  color: #000;
-  text-decoration: none;
-}
+  	color: #000;
+  	text-decoration: none;
+	}
+	
+article .meta {
+	font-family: robotomedium, sans-serif;
+	margin: 0 20px;	
+	color: #fff;
+	}
 
-article .author a.replies-link,
-article .author a.delete {
-  float: right;
-  margin-right: 20px;
-  margin-top: 5px;
-  color: #999;
-}
+article .meta a.replies-link,
+article .meta a.delete {
+	float: right;
+	color: #fff;
+	}
 
 article .author a:hover {
   color: #666;
@@ -357,13 +366,6 @@ article .when a:hover {
   text-decoration: underline;
 }
 
-.id {
-  display: inline-block;
-  padding: 0 12px 0 18px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-}
 
 .color {
   display: inline-block;
@@ -381,7 +383,7 @@ article .when a:hover {
 }
 
 .elapsedtime {
-	color: #888;
+	color: #fff;
 	}
 
 #reply {
