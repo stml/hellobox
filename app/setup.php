@@ -52,4 +52,6 @@ $this->post('/api/backup', 'api/backup', $no_layout);
 $this->post('/api/hide_announcement', 'api/hide_announcement', $no_layout);
 $this->get('/api/enable_ssl', 'api/enable_ssl', $no_layout);
 
+$this->get('/art', 'art/main');
+
 ?>
